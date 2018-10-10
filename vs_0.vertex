@@ -1,0 +1,11 @@
+#version 330
+
+uniform vec2 displacement;
+
+in vec3 aPos;
+in vec3 CPU_aPos;
+
+
+void main(){
+    gl_Position = vec4(aPos.x+displacement.x, aPos.y+displacement.y, aPos.z, 1.0);
+}
